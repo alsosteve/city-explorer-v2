@@ -47,31 +47,31 @@ Actual time needed to complete: 30 min
 
 Estimate of time needed to complete: 30 min
 
-Start time: 00:00 Am
+Start time: 04:00 Am
 
-Finish time: 00:00 Am
+Finish time: 07:20 Am
 
-Actual time needed to complete: 00 min
+Actual time needed to complete: 03 hr 20 min
 
 ### Name of feature: 1.3 Map
 
 Estimate of time needed to complete: 20 min
 
-Start time: 00:00 Am
+Start time: 07:20 Am
 
-Finish time: 00:00 Am
+Finish time: 07:28 Am
 
-Actual time needed to complete: 00 min
+Actual time needed to complete: 08 min
 
 ### Name of feature: 1.4 Error
 
 Estimate of time needed to complete: 20 min
 
-Start time: 00:00 Am
+Start time: 07:28 Am
 
-Finish time: 00:00 Am
+Finish time: 07:30 Am
 
-Actual time needed to complete: 00 min
+Actual time needed to complete: 02 min
 
 ### Name of feature: 2.1 Set up your server repository.
 
