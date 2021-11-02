@@ -38,9 +38,9 @@ Estimate of time needed to complete: 30 min
 
 Start time: 12:30 Am
 
-Finish time: 00:00 Am
+Finish time: 01:00 Am
 
-Actual time needed to complete: 00
+Actual time needed to complete: 30 min
 
 
 ### Name of feature: 1.2 Locations
