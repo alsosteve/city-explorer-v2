@@ -4,6 +4,7 @@ import { Component } from "react";
 import axios from 'axios';
 import SearchBar from './SearchBar';
 import City from './City';
+import Weather from './Weather';
 
 export default class Main extends Component {
 
@@ -14,6 +15,7 @@ export default class Main extends Component {
       location: {},
       error: false,
       errorMessage: '',
+      weather: [],
     }
   }
 
@@ -36,8 +38,28 @@ export default class Main extends Component {
     }
   }
 
+  getWeather = async () => {
+    const weatherUrl = `http://localhost:3001/weather?searchQuery=${this.state.searchQuery}&lat=${this.state.location.lat}&lon=${this.state.location.lon}`;
+
+    try {
+      const weatherResponse = await axios.get(weatherUrl);
+      const weather = weatherResponse.data;
+
+      this.setState({
+        weather,  // weather:weather
+        error: false,
+      });
+      console.log(weather);
+    } catch (error) {
+      console.error('Unable to find city', this.state.searchQuery);
+
+      this.setState({ error: true, errorMessage: error.message});
+    }
+  }
+
   handleClick = async () => {
     await this.getLocation();
+    await this.getWeather();
   }
 
   handleChange = (e) => {
@@ -51,6 +73,8 @@ export default class Main extends Component {
         <SearchBar handleClick={this.handleClick} handleChange={this.handleChange}/>
 
         {this.state.location.place_id && <City location={this.state.location}/>}
+
+        {this.state.location.place_id && <Weather weather={this.state.weather}/>}
 
         {this.state.error && <h2>{this.state.errorMessage}</h2>}
       </div>

@@ -20,10 +20,10 @@
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
 [web request-response cycle]()
-> Collaboration with 
+> Collaboration with Kirk Garrison
 
 [web request-response cycle]()
-> Collaboration with 
+> Collaboration with Rayan Hoffman
 
 [web request-response cycle]()
 > Collaboration with 
@@ -32,7 +32,7 @@
 > Collaboration with 
 
 ## Time Estimates
-### Name of feature: 1.1 Set up your React repository & API keys.
+### Name of feature: 6.1 Set up your React repository & API keys.
 
 Estimate of time needed to complete: 30 min
 
@@ -43,7 +43,7 @@ Finish time: 01:00 Am
 Actual time needed to complete: 30 min
 
 
-### Name of feature: 1.2 Locations
+### Name of feature: 6.2 Locations
 
 Estimate of time needed to complete: 30 min
 
@@ -53,7 +53,7 @@ Finish time: 07:20 Am
 
 Actual time needed to complete: 03 hr 20 min
 
-### Name of feature: 1.3 Map
+### Name of feature: 6.3 Map
 
 Estimate of time needed to complete: 20 min
 
@@ -63,7 +63,7 @@ Finish time: 07:28 Am
 
 Actual time needed to complete: 08 min
 
-### Name of feature: 1.4 Error
+### Name of feature: 6.4 Error
 
 Estimate of time needed to complete: 20 min
 
@@ -73,17 +73,7 @@ Finish time: 07:30 Am
 
 Actual time needed to complete: 02 min
 
-### Name of feature: 2.1 Set up your server repository.
-
-Estimate of time needed to complete: 30 min
-
-Start time: 00:00 Am
-
-Finish time: 00:00 Am
-
-Actual time needed to complete: 00 min
-
-### Name of feature: 2.2 Weather (placeholder)
+### Name of feature: 7.2 Weather (placeholder)
 
 Estimate of time needed to complete: 1 hr
 
@@ -93,7 +83,7 @@ Finish time: 00:00 Am
 
 Actual time needed to complete: 
 
-### Name of feature: 2.3 Errors (revisited)
+### Name of feature: 7.3 Errors (revisited)
 
 Estimate of time needed to complete: 00 min
 
