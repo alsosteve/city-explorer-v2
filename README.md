@@ -19,17 +19,17 @@
 
 ## Credit and Collaborations
 <!-- Give credit (and a link) to other people or resources that helped you build this application. -->
-[web request-response cycle]()
+![web request-response cycle](public/day1.PNG)
 > Collaboration with Kirk Garrison
 
-[web request-response cycle]()
+![web request-response cycle](public/day2.png)
 > Collaboration with Rayan Hoffman
 
-[web request-response cycle]()
-> Collaboration with 
+[web request-response cycle](public/day3.png)
+> Collaboration with nobody
 
-[Refactoring into Modules]()
-> Collaboration with 
+![Refactoring into Modules](public/day4.png)
+> Collaboration with Samuel Panek
 
 ## Time Estimates
 ### Name of feature: 6.1 Set up your React repository & API keys.

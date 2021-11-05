@@ -5,6 +5,7 @@ import axios from 'axios';
 import SearchBar from './SearchBar';
 import City from './City';
 import Weather from './Weather';
+import Movies from './Movies.js';
 
 export default class Main extends Component {
 
@@ -16,6 +17,7 @@ export default class Main extends Component {
       error: false,
       errorMessage: '',
       weather: [],
+      movies: [],
     }
   }
 
@@ -57,9 +59,29 @@ export default class Main extends Component {
     }
   }
 
+  getMovies = async () => {
+    const moviesUrl = `http://localhost:3001/movies?searchQuery=${this.state.searchQuery}`
+    try {
+
+      const moviesResponse = await axios.get(moviesUrl);
+      const movies = moviesResponse.data;
+
+      this.setState({
+
+        movies, 
+        error: false,
+      });
+    } catch (error) {
+      console.error('Unable to find movie data', this.state.searchQuery);
+
+      this.setState({ error: true, errorMessage: error.message});
+    }
+  }
+
   handleClick = async () => {
     await this.getLocation();
     await this.getWeather();
+    await this.getMovies();
   }
 
   handleChange = (e) => {
@@ -75,6 +97,8 @@ export default class Main extends Component {
         {this.state.location.place_id && <City location={this.state.location}/>}
 
         {this.state.location.place_id && <Weather weather={this.state.weather}/>}
+
+        {this.state.location.place_id && <Movies movies = {this.state.movies}/>}
 
         {this.state.error && <h2>{this.state.errorMessage}</h2>}
       </div>
